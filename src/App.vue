@@ -83,8 +83,4 @@ import "./assets/base.scss";
     </div>
   </form>
 </div>
-
-<p style="text-align:center">Read more: <a href="https://auralinna.blog/post/2018/how-to-create-material-design-like-form-text-fields" target="_blank" rel="noopener noreferrer">How to create Material Design like form text fields with floating label and animated underline bar</a></p>
-
-<p style="text-align:center">See also: <a href="https://codepen.io/teroauralinna/pen/rZZGpe" target="_blank">Javascript version</a></p>
 </template>
