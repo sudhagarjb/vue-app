@@ -1,87 +1,90 @@
 <script setup>
-import HelloWorld from "./components/HelloWorld.vue";
-import TheWelcome from "./components/TheWelcome.vue";
+import "./assets/base.scss";
+
 </script>
 
 <template>
-  <header>
-    <img
-      alt="Vue logo"
-      class="logo"
-      src="./assets/logo.svg"
-      width="300"
-      height="300"
-    />
+<h1><a href="https://material.io/design/components/text-fields.html">Material Design</a> like form input text fields with CSS only</h1>
 
-    <div class="wrapper">
-      <HelloWorld msg="Sudhagar You did it!" />
+<div class="container">
+  <form novalidate>
+    <div class="row">
+      <div class="col-sm">
+        <div class="form-field">
+          <div class="form-field__control">
+            <input id="firstname" type="text" class="form-field__input" placeholder=" " />
+            <label for="firstname" class="form-field__label">First name</label>
+            <div class="form-field__bar"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="form-field">
+          <div class="form-field__control">
+            <input id="lastname" type="text" class="form-field__input" placeholder=" " />
+            <label for="lastname" class="form-field__label">Last name</label>
+            <div class="form-field__bar"></div>
+          </div>
+        </div>
+      </div>
     </div>
-  </header>
+    <div class="row">
+      <div class="col-sm">
+        <div class="form-field">
+          <div class="form-field__control">
+            <input id="email" type="email" class="form-field__input" placeholder=" " />
+            <label for="email" class="form-field__label">Email</label>
+            <div class="form-field__bar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <div class="form-field">
+          <div class="form-field__control">
+            <input id="street" type="text" class="form-field__input" placeholder=" " />
+            <label for="street" class="form-field__label">Street address</label>
+            <div class="form-field__bar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <div class="form-field">
+          <div class="form-field__control">
+            <input id="zip" type="text" class="form-field__input" placeholder=" " />
+            <label for="zip" class="form-field__label">Zip code</label>
+            <div class="form-field__bar"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="form-field">
+          <div class="form-field__control">
+            <input id="city" type="text" class="form-field__input" placeholder=" " />
+            <label for="city" class="form-field__label">City</label>
+            <div class="form-field__bar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <div class="form-field">
+          <div class="form-field__control">
+            <textarea id="additionalInfo" class="form-field__textarea" placeholder=" "></textarea>
+            <label for="additionalInfo" class="form-field__label">Additional info</label>
+            <div class="form-field__bar"></div>
+          </div>
+        </div>      
+      </div>
+    </div>
+  </form>
+</div>
 
-  <main>
-    <TheWelcome />
-  </main>
+<p style="text-align:center">Read more: <a href="https://auralinna.blog/post/2018/how-to-create-material-design-like-form-text-fields" target="_blank" rel="noopener noreferrer">How to create Material Design like form text fields with floating label and animated underline bar</a></p>
+
+<p style="text-align:center">See also: <a href="https://codepen.io/teroauralinna/pen/rZZGpe" target="_blank">Javascript version</a></p>
 </template>
-
-<style>
-@import "./assets/base.css";
-
-#vue_app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
-}
-
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #vue_app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
-
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-}
-</style>
